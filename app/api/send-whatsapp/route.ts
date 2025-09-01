@@ -60,8 +60,7 @@ export async function POST(req: Request) {
     }
 
     // Fallback: build wa.me link (user taps send)
-    const number = (process as any).env.NEXT_PUBLIC_RESTAURANT_WHATSAPP || ""
-    const link = `https://wa.me/${encodeURIComponent(number)}?text=${encodeURIComponent(message)}`
+    const link = `https://wa.me/${9370108510}?text=${encodeURIComponent(message)}`
     return NextResponse.json({ link })
   } catch (e: any) {
     return NextResponse.json({ error: e?.message ?? "Unknown error" }, { status: 400 })
