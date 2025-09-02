@@ -60,7 +60,7 @@ export async function POST(req: Request) {
     }
 
     // Fallback: build wa.me link (user taps send)
-    const link = `https://wa.me/${9370108510}?text=${encodeURIComponent(message)}`
+    const link = `https://wa.me/${9529672277}?text=${encodeURIComponent(message)}`
     return NextResponse.json({ link })
   } catch (e: any) {
     return NextResponse.json({ error: e?.message ?? "Unknown error" }, { status: 400 })
