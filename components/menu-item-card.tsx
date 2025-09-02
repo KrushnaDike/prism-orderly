@@ -17,7 +17,7 @@ export function MenuItemCard({ item }: { item: MenuItem }) {
     <Card className="overflow-hidden">
       <CardHeader className="p-0">
         <Image
-          src={`/abstract-geometric-shapes.png?height=200&width=320&query=${encodeURIComponent(
+          src={`/dish.png?height=200&width=320&query=${encodeURIComponent(
             item.imgQuery || item.name
           )}`}
           alt={item.name}
